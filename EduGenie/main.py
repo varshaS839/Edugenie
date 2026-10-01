@@ -42,6 +42,7 @@ async def gemini_error_handler(request: Request, exc: GeminiError):
 @app.exception_handler(RequestValidationError)
 async def validation_error_handler(request: Request, exc: RequestValidationError):
     return error_response("Please enter some text (it cannot be empty or too long).", 400)
+    #activate
 
 
 @app.get("/", response_class=HTMLResponse)
