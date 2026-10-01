@@ -38,7 +38,7 @@ def error_response(message: str, status_code: int) -> JSONResponse:
 async def gemini_error_handler(request: Request, exc: GeminiError):
     return error_response(str(exc), 503)
 
-
+#commit
 @app.exception_handler(RequestValidationError)
 async def validation_error_handler(request: Request, exc: RequestValidationError):
     return error_response("Please enter some text (it cannot be empty or too long).", 400)
