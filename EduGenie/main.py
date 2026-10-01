@@ -7,7 +7,7 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel, Field
-
+#commit
 from explanation_module import explain_topic
 from gemini_client import MODEL_NAME, GeminiError
 from learning_path import get_learning_recommendations
