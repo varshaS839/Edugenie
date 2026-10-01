@@ -80,7 +80,7 @@ async def summarize_api(payload: TextRequest):
     if not text:
         return error_response("Please provide text to summarize.", 400)
     return {"summary": summarize_text(text)}
-
+#activate
 
 # Quiz generation - POST API
 @app.post("/quiz")
